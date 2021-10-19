@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a, a-visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 400;
+}
+/*-------------------------*/
+
+.container {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 600px;
+    border: 1px solid;
+    background-color: azure;
+}
+
+
+
+.payment-container {
+    width: 600px;
+}
+
+.form-container {
+
+    height: 400px;
+    background-color: #d0e8ed;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.rest {
+
+}
+
+.card-number  {
+
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.card-number-tittle {
+
+}
+
+.card-field {
+    margin-top: 10px;
+    height: 30px;
+    width: 400px;
+    border: 1px solid;
+    padding-left: 5px;
+    font-size: 18px;
+
+}
+
+.btn {
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #ffe8cb;
+    background-color: #913e12db;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.rest-msg {
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.pay {
+    display: inline-grid;
+    margin-top: 30px;
+}
+
+.sum-field {
+    width: 280px;
+}
+
+.pay-msg {
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: -34px;
+    margin-left: 190px;
+    font-style: italic;
+}
+
+.sum-tittle {
+    font-size: 26px;
+
+}
+

@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a, a-visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 400;
+}
+
+/*-------------------------*/
+.main {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: azure;
+}
+.screen{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: azure;
+}
+
+.exception-msg-container {
+    padding-top: 100px;
+}
+
+.exception-msg-container li{
+    display: block;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 24px;
+    line-height: 26px
+
+}
+
+.btn {
+
+}
+
+.btn a{
+    border: 1px solid;
+    height: 50px;
+    width: 200px;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    background: #662929;
+    color: wheat;
+    margin-left: 100px;
+    margin-top: 36px
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.screen-not {
+    width: 800px;
+    min-height: 100%;
+    background-image: url(../img/404.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn-not a{
+    border: 1px solid;
+    height: 50px;
+    width: 200px;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    background: #662929;
+    color: wheat;
+    margin-left: 36px;
+    margin-top: 89px;
+    border-radius: 5px
+}
