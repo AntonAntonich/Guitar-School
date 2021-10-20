@@ -88,5 +88,5 @@ Admin:
 <li>Disactivate contrac</li>
 </ul>
 <h3>Database graphic scheme:</h3>
-https://github.com/AntonAntonich/Guitar-School/raw/master/gs_db_scheme_picture.png
-
+<img src="
+https://github.com/AntonAntonich/Guitar-School/raw/master/gs_db_scheme_picture.png">
