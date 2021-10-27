@@ -10,7 +10,7 @@ Also, tutors could work as freelancers.
 <br>
 To become a member of that school person should pass registration procedure, by entering personal data and activate account by following activation link in email message.
 <br>
-Interaction between tuttors and students controls administrator. 
+Interaction between tutors and students controls administrator. 
 Appllication emitate money transaction.
 </p>
 
@@ -38,7 +38,7 @@ All users:
 Guest:
 </h3>
 <ul>
-<li>Sign Up</li>
+<li>Signup</li>
 <li>Try to buy product-card</li>
 </ul>
 
@@ -46,7 +46,7 @@ Guest:
 Student, Tutor, Admin:
 </h3>
 <ul>
-<li>Signin</li>
+<li>Sign in</li>
 </ul>
 
 <h3>
@@ -62,7 +62,7 @@ Student:
 <ul>
 <li>See student's courses where he took part in</li>
 <li>Go to page with poduct-cards</li>
-<li>Try to buy product, bu using imitation of outside payment application</li>
+<li>Try to buy product, by using imitation of outside payment application</li>
 <li>See money rest by quering bank account</li>
 <li>Transfer money</li>
 </ul>
@@ -71,7 +71,7 @@ Student:
 Tutor:
 </h3>
 <ul>
-<li>See student's  wich he teachs</li>
+<li>See students  wich he teachs</li>
 <li>Change student skill level</li>
 </ul>
 
@@ -85,7 +85,7 @@ Admin:
 <li>Unban user</li>
 <li>See orders</li>
 <li>Draw up a contrac appropriating order</li>
-<li>Disactivate contrac</li>
+<li>Disactivate contract</li>
 </ul>
 <h3>Database graphic scheme:</h3>
 <img src="https://github.com/AntonAntonich/Guitar-School/raw/master/gs_db_scheme_picture.png">
