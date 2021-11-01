@@ -88,14 +88,17 @@ public class User extends Entity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         User user = (User) o;
-        return userId == user.userId &&
-                Objects.equals(email, user.email) &&
-                Objects.equals(nickName, user.nickName) &&
-                Objects.equals(userRole, user.userRole) &&
-                Objects.equals(tutorDegree, user.tutorDegree) &&
-                Objects.equals(studentSkillLevel, user.studentSkillLevel) &&
-                Objects.equals(isActive, user.isActive);
+
+        if (userId != user.userId) return false;
+        if (email != null ? !email.equals(user.email) : user.email != null) return false;
+        if (nickName != null ? !nickName.equals(user.nickName) : user.nickName != null) return false;
+        if (userRole != null ? !userRole.equals(user.userRole) : user.userRole != null) return false;
+        if (tutorDegree != null ? !tutorDegree.equals(user.tutorDegree) : user.tutorDegree != null) return false;
+        if (studentSkillLevel != null ? !studentSkillLevel.equals(user.studentSkillLevel) : user.studentSkillLevel != null)
+            return false;
+        return isActive != null ? isActive.equals(user.isActive) : user.isActive == null;
     }
 
     @Override

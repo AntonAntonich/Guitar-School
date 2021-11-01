@@ -46,7 +46,7 @@ public class Controller extends HttpServlet {
             router = command.execute(req);
         } catch (CommandException e) {
             logger.log(Level.ERROR, e);
-            //resp.sendError(500);
+            resp.sendError(500);
         }
         String page = router.getPage();
 
@@ -56,10 +56,10 @@ public class Controller extends HttpServlet {
                     req.getRequestDispatcher(page).forward(req, resp);
                 } catch (ServletException e) {
                     logger.log(Level.ERROR, e);
-                   // resp.sendError(500);
+
                 } catch (IOException e) {
                     logger.log(Level.ERROR, e);
-                    //resp.sendError(500);
+
                 }
                 break;
             case REDIRECT:

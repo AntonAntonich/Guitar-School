@@ -112,16 +112,21 @@ public class Contract extends Entity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Contract contract = (Contract) o;
-        return contractId == contract.contractId &&
-                Objects.equals(tutorEmail, contract.tutorEmail) &&
-                Objects.equals(studentEmail, contract.studentEmail) &&
-                Objects.equals(currentLevel, contract.currentLevel) &&
-                Objects.equals(targetLevel, contract.targetLevel) &&
-                Objects.equals(guitarType, contract.guitarType) &&
-                Objects.equals(genre, contract.genre) &&
-                Objects.equals(startDate, contract.startDate) &&
-                Objects.equals(endDate, contract.endDate);
+
+        if (contractId != contract.contractId) return false;
+        if (tutorEmail != null ? !tutorEmail.equals(contract.tutorEmail) : contract.tutorEmail != null) return false;
+        if (studentEmail != null ? !studentEmail.equals(contract.studentEmail) : contract.studentEmail != null)
+            return false;
+        if (currentLevel != null ? !currentLevel.equals(contract.currentLevel) : contract.currentLevel != null)
+            return false;
+        if (targetLevel != null ? !targetLevel.equals(contract.targetLevel) : contract.targetLevel != null)
+            return false;
+        if (guitarType != null ? !guitarType.equals(contract.guitarType) : contract.guitarType != null) return false;
+        if (genre != null ? !genre.equals(contract.genre) : contract.genre != null) return false;
+        if (startDate != null ? !startDate.equals(contract.startDate) : contract.startDate != null) return false;
+        return endDate != null ? endDate.equals(contract.endDate) : contract.endDate == null;
     }
 
     @Override

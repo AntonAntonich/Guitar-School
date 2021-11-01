@@ -24,6 +24,7 @@ import java.io.IOException;
 
 public class ProfileFilter implements Filter {
     private static final Logger logger = LogManager.getLogger();
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -40,13 +41,13 @@ public class ProfileFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();
-        String role = (String)session.getAttribute(SessionAttribute.ROLE);
+        String role = (String) session.getAttribute(SessionAttribute.ROLE);
         logger.log(Level.INFO, role + "in prof filter");
         response.setHeader("Cache-control", "no-cache");
         response.setHeader("Cache-control", "no-store");
         response.setHeader("Pragma", "no-cache");
         response.setDateHeader("Expire", 0);
-        if(role.equals(RoleType.NONE)) {
+        if (role.equals(RoleType.NONE)) {
             response.sendRedirect("http://localhost:8080/Guitar_School_0_0_2_war_exploded/index.jsp");
         }
 
