@@ -62,16 +62,19 @@ public class Order extends Entity {
     public void setConfirmed(boolean confirmed) {
         isConfirmed = confirmed;
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Order order = (Order) o;
-        return isPaid == order.isPaid &&
-                isConfirmed == order.isConfirmed &&
-                Objects.equals(email, order.email) &&
-                Objects.equals(genre, order.genre);
+
+        if (orderId != order.orderId) return false;
+        if (isPaid != order.isPaid) return false;
+        if (isConfirmed != order.isConfirmed) return false;
+        if (email != null ? !email.equals(order.email) : order.email != null) return false;
+        return genre != null ? genre.equals(order.genre) : order.genre == null;
     }
 
     @Override
