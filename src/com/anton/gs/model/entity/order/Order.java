@@ -62,7 +62,7 @@ public class Order extends Entity {
     public void setConfirmed(boolean confirmed) {
         isConfirmed = confirmed;
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
