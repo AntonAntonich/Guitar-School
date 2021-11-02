@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/jsp/*"})
+//@WebFilter(dispatcherTypes = {
+//        DispatcherType.FORWARD,
+//},urlPatterns = {"/jsp/*"})
 public class CustomSecurityFilter implements Filter {
     private static Logger logger = LogManager.getLogger();
     private static final String GOOGLE = "https://google.com";

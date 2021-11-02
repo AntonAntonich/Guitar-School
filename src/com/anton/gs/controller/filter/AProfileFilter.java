@@ -22,7 +22,7 @@ import java.io.IOException;
         "/jsp/roles/*",
         "/jsp/first_screen.jsp"})
 
-public class ProfileFilter implements Filter {
+public class AProfileFilter implements Filter {
     private static final Logger logger = LogManager.getLogger();
 
     @Override
@@ -42,7 +42,7 @@ public class ProfileFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession();
         String role = (String) session.getAttribute(SessionAttribute.ROLE);
-        logger.log(Level.INFO, role + "in prof filter");
+        logger.log(Level.INFO, role + " in prof filter");
         response.setHeader("Cache-control", "no-cache");
         response.setHeader("Cache-control", "no-store");
         response.setHeader("Pragma", "no-cache");
