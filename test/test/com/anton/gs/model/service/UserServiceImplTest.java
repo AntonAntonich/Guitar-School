@@ -3,7 +3,7 @@ package test.com.anton.gs.model.service;
 import com.anton.gs.model.entity.user.User;
 import com.anton.gs.model.exception.DaoException;
 import com.anton.gs.model.exception.ServiceException;
-import com.anton.gs.model.repository.impl.UserRepositoryImpl;
+import test.com.anton.gs.model.repository.impl.UserRepositoryImpl;
 import com.anton.gs.model.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

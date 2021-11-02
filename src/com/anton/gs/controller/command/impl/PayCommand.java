@@ -97,8 +97,8 @@ public class PayCommand implements Command {
         String page = PageManager.getProperty(PageAddress.PAYMENT_PAGE);
         message = MessageManager.getProperty(MessagePath.THERE_IS_NO_SUCH_CLIENT);
         req.getSession().setAttribute(MessageAttribute.REST_MSG, message);
-        req.getSession().setAttribute(SessionAttribute.REST, UsefulRegEx.PLUG_EMPTY);
-        req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, UsefulRegEx.PLUG_EMPTY);
+        req.getSession().setAttribute(SessionAttribute.REST, RegExConstants.PLUG_EMPTY);
+        req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, RegExConstants.PLUG_EMPTY);
         router.setTypeRedirect();
         router.setPage(page);
     }

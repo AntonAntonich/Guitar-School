@@ -1,4 +1,4 @@
-package com.anton.gs.model.repository;
+package test.com.anton.gs.model.repository;
 
 import com.anton.gs.model.exception.DaoException;
 

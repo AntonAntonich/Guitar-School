@@ -1,6 +1,6 @@
 package com.anton.gs.controller.command;
 
-public class UsefulRegEx {
+public class RegExConstants {
     public static final String PLUG_EMPTY = "";
     public static final String UNDERSCORE = "_";
     public static final String OLD_PATH_DELIMITER = "\\";
@@ -11,7 +11,7 @@ public class UsefulRegEx {
 
 
 
-    private UsefulRegEx(){
+    private RegExConstants(){
 
     };
 }

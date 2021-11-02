@@ -1,7 +1,5 @@
 package com.anton.gs.controller.command;
 
-import java.util.Optional;
-
 public class CommandProvider {
 
     public static Command  defineCommand(String commandName) {
@@ -12,7 +10,7 @@ public class CommandProvider {
         }
         try{
             CommandType type =
-                    CommandType.valueOf(commandName.toUpperCase().replaceAll("\\s+", UsefulRegEx.UNDERSCORE));
+                    CommandType.valueOf(commandName.toUpperCase().replaceAll("\\s+", RegExConstants.UNDERSCORE));
             current = type.getCommand();
         }catch (IllegalArgumentException e){
             //log

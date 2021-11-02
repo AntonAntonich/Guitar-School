@@ -1,10 +1,10 @@
-package com.anton.gs.model.repository.impl;
+package test.com.anton.gs.model.repository.impl;
 
 import com.anton.gs.model.dao.UserDao;
 import com.anton.gs.model.entity.user.User;
 import com.anton.gs.model.entity.user.UserCreator;
 import com.anton.gs.model.exception.DaoException;
-import com.anton.gs.model.repository.UserRepository;
+
 
 import java.util.ArrayList;
 import java.util.List;

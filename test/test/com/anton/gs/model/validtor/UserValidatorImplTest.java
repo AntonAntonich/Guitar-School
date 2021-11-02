@@ -4,6 +4,7 @@ import com.anton.gs.controller.command.MessageManager;
 import com.anton.gs.controller.command.MessagePath;
 import com.anton.gs.model.validator.impl.UserValidatorImpl;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,7 +18,7 @@ public class UserValidatorImplTest {
        userValidator = UserValidatorImpl.getInstance();
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         userValidator = null;
     }
@@ -39,7 +40,7 @@ public class UserValidatorImplTest {
     public void testValidateFormPasswordConstraintPositive() {
         String actual = userValidator.validateForm(
                 "aaa@gmail.com",
-                "aaaAAA33",
+                "aaaAAA33#",
                 "aaaAAA333#",
                 "anton"
         ).get("errorPasswordMessage");

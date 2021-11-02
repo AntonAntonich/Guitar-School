@@ -2,7 +2,6 @@ package com.anton.gs.controller;
 
 import com.anton.gs.controller.command.*;
 import com.anton.gs.model.dao.impl.UserDaoImpl;
-import com.anton.gs.model.exception.CommandException;
 import com.anton.gs.model.exception.DaoException;
 import com.anton.gs.model.util.impl.UrlModifierImpl;
 import javax.servlet.ServletException;
@@ -15,7 +14,7 @@ import javax.servlet.http.Part;
 import java.io.*;
 
 
-import static com.anton.gs.controller.command.UsefulRegEx.*;
+import static com.anton.gs.controller.command.RegExConstants.*;
 
 @WebServlet(urlPatterns = "/upload_controller")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2,

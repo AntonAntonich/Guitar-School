@@ -41,8 +41,8 @@ public class RestCommand implements Command {
             if(!email.equals(emailFromDb)) {
                 message = MessageManager.getProperty(MessagePath.THERE_IS_NO_SUCH_CLIENT);
                 req.getSession().setAttribute(MessageAttribute.REST_MSG, message);
-                req.getSession().setAttribute(SessionAttribute.REST, UsefulRegEx.PLUG_EMPTY);
-                req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, UsefulRegEx.PLUG_EMPTY);
+                req.getSession().setAttribute(SessionAttribute.REST, RegExConstants.PLUG_EMPTY);
+                req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, RegExConstants.PLUG_EMPTY);
                 return router;
             }
             rest = paymentService.findRestByAccount(bankAccountNumber);
@@ -52,7 +52,7 @@ public class RestCommand implements Command {
         }
         req.getSession().setAttribute(SessionAttribute.REST, rest);
         req.getSession().setAttribute(MessageAttribute.REST_MSG, message);
-        req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, UsefulRegEx.PLUG_EMPTY);
+        req.getSession().setAttribute(SessionAttribute.TRANSFER_MSG, RegExConstants.PLUG_EMPTY);
         return router;
     }
 }
